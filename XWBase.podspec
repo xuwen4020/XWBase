@@ -39,7 +39,6 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  #spec.license      = "MIT (example)"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
@@ -64,8 +63,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "10.0"
+    spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -93,7 +91,6 @@ Pod::Spec.new do |spec|
 
   #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
-
   # spec.public_header_files = "Classes/**/*.h"
 
 
@@ -105,7 +102,7 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # spec.resource  = "icon.png"
+  spec.resource  = "Product/XWBaseBundle.bundle"
   # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -117,7 +114,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #  
   
-  spec.ios.vendored_frameworks = 'Products/XWBase.framework'
+  spec.ios.vendored_frameworks = 'Product/XWBase.framework'
 
   spec.framework  = 'UIKit','Foundation'
 
