@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "XWBase"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "Test XWBase"
 
   spec.homepage     = "https://github.com/xuwen4020/XWBase.git"    
@@ -12,9 +12,9 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "8.0"
 
   spec.source       = { :git => "https://github.com/xuwen4020/XWBase.git", :tag => "#{spec.version}" }
-  #spec.source_files  = "XWBase/Demo/*.{h,m}"
-  spec.resource  = "Product/XWBaseBundle.bundle"
-  spec.ios.vendored_frameworks = 'Product/XWBase.framework'
+  spec.source_files  = "XWBase/**/*.{h,m}"
+  #spec.resource  = "Product/XWBaseBundle.bundle"
+  #spec.ios.vendored_frameworks = 'Product/XWBase.framework'
 
   spec.frameworks = 'UIKit','Foundation'
   spec.requires_arc = true
